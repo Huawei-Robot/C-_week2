@@ -1,20 +1,20 @@
-/*#include<cstdio>
+#include<cstdio>
 #include<algorithm>
 using namespace std;
 const int maxn = 10000;
 
 int main()
 {
-	int n, q, x, a[maxn], kase = 0;//n:ÊäÈëµÄÊı×é¸öÊı q:ÎÊÌâ¸öÊı x£ºÒª²éÕÒµÄÖµ,maxn:Êı×éµÄÈ«²¿ÈİÁ¿,kase:ÑùÀı¼ÆÊı
-	while (scanf("%d%d", &n, &q) == 2 && n) { //ÊäÈë
-		printf("CASE# %d:\n", ++kase); //ÑùÀı¼Ó1
-		for (int i = 0; i < n; i++) //ÊäÈëÊı×Ö
+	int n, q, x, a[maxn], kase = 0;//n:è¾“å…¥çš„æ•°ç»„ä¸ªæ•° q:é—®é¢˜ä¸ªæ•° xï¼šè¦æŸ¥æ‰¾çš„å€¼,maxn:æ•°ç»„çš„å…¨éƒ¨å®¹é‡,kase:æ ·ä¾‹è®¡æ•°
+	while (scanf("%d%d", &n, &q) == 2 && n) { //è¾“å…¥
+		printf("CASE# %d:\n", ++kase); //æ ·ä¾‹åŠ 1
+		for (int i = 0; i < n; i++) //è¾“å…¥æ•°å­—
 			scanf("%d", &a[i]);
-		sort(a, a + n);//ÓÃc++º¯Êı½øĞĞÅÅĞò
-		while (q--) { //ÎÊÌâÖĞÃ¿Ò»¸öÊı×Ö¿ªÊ¼ÔÚÊı×éÖĞ½øĞĞ²éÕÒ
-			scanf("%d", &x); //ÊäÈëÄãÒª²éÕÒµÄÊı×Ö
-			int p = lower_bound(a, a + n, x) - a;//ÔÚÒÑÅÅĞòÊı×éaÖĞÑ°ÕÒx
-			if (a[p] == x) //ÕÒµ½µÄ»°ÔõÑù£¬ÕÒ²»µ½ÓÖÔõÑù£¬¿ªÊ¼Êä³ö
+		sort(a, a + n);//ç”¨c++å‡½æ•°è¿›è¡Œæ’åº
+		while (q--) { //é—®é¢˜ä¸­æ¯ä¸€ä¸ªæ•°å­—å¼€å§‹åœ¨æ•°ç»„ä¸­è¿›è¡ŒæŸ¥æ‰¾
+			scanf("%d", &x); //è¾“å…¥ä½ è¦æŸ¥æ‰¾çš„æ•°å­—
+			int p = lower_bound(a, a + n, x) - a;//åœ¨å·²æ’åºæ•°ç»„aä¸­å¯»æ‰¾x
+			if (a[p] == x) //æ‰¾åˆ°çš„è¯æ€æ ·ï¼Œæ‰¾ä¸åˆ°åˆæ€æ ·ï¼Œå¼€å§‹è¾“å‡º
 				printf("%d found at %d\n", x, p + 1);
 			else
 				printf("%d not found\n", x);
@@ -24,4 +24,3 @@ int main()
 
 	return 0;
 }
-*/
